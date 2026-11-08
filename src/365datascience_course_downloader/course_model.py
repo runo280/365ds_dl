@@ -51,7 +51,7 @@ class Progress(Model):
 
 
 class VideoItem(Model):
-    name: str
+    name: Optional[str] = None
     ext_id: str = Field(..., alias="extId")
     provider: str
     duration: int
